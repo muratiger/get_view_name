@@ -32,9 +32,7 @@ View:
 ```
 Parcial:
 ```ruby
-<% @samples.each do |sample| %>
-  render partial: 'sample', sample: sample
-<% end %>
+<%= sample.name %>
 
 <%= view_name %>  => "index"
 ```

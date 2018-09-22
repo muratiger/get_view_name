@@ -32,7 +32,7 @@ View:
 ```
 Parcial:
 ```ruby
-<% @samples.each do |blog| %>
+<% @samples.each do |sample| %>
   render partial: 'sample', sample: sample
 <% end %>
 
@@ -82,7 +82,7 @@ Layout:
     <%= stylesheet_link_tag    'application' %>
     <%= javascript_include_tag 'application' %>
 
-    <% if view_name == 'new' %> # action_name method returns 'create'
+    <% if view_name == 'new' %> # if you use action_name method, it returns 'create'
       <%= stylesheet_link_tag 'new' %>
       <%= javascript_include_tag 'new' %>
     <% end %>
